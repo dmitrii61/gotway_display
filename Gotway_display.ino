@@ -9,11 +9,11 @@ MAX7219 < 1, 2, 9 > mtrx;       // 2 LED matrixes (1*2), CS pin is 9 (Arduino Na
 // SETTINGS
 String backlight_txt = "";      // Text to scroll
 int scrolling_on_euc_speed = 5; // Start scrolling text on backlight if the speed reaches this value
-bool debug_mode1 = 1;           // Debug mode 1: synthetic data for variables instead of parcing EUC data
+bool debug_mode1 = 0;           // Debug mode 1: synthetic data for variables instead of parcing EUC data
 bool debug_mode2 = 0;           // Turn on Serial.print with debugging data
 bool useBetterPercents = 1;     // Use Wheellog's better pernects formula
 int temperature_alarm = 70;     // Temperature level for overheating alarm
-int beeper_pin = 3;             // If beeper is connected, type it's pin number (default: 3). Otherwise, type 0 to avoid listening beeper signals (experimental)
+int beeper_pin = 0;             // If beeper is connected, type it's pin number (default: 3). Otherwise, type 0 to avoid listening beeper signals (experimental)
 byte brightness_stop = 7;       // Brightness [0-15] while stop
 byte brightness_ride = 15;      // Brightness [0-15] while riding
 int scroll_x_shift = 7;         // X-coordinate for the scrolling text to appear on the cycle start (recommended = 7)
